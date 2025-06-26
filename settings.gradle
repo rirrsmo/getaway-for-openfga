@@ -1,0 +1,2 @@
+rootProject.name = "getaway-for-openfga"
+include("example")
