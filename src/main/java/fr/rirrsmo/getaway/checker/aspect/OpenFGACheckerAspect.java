@@ -8,20 +8,15 @@ import fr.rirrsmo.getaway.checker.exception.AccessDenied;
 import fr.rirrsmo.getaway.checker.exception.InvalidCheckAnnotation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.reflect.CodeSignature;
 import org.aspectj.lang.reflect.MethodSignature;
-import org.springframework.stereotype.Component;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 
 @Slf4j
-@Component
 @Aspect
 @RequiredArgsConstructor
 public class OpenFGACheckerAspect {
