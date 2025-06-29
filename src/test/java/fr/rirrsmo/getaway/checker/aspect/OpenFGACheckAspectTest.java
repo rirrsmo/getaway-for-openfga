@@ -53,4 +53,11 @@ public class OpenFGACheckAspectTest {
                 ));
 
     }
+
+    @Test
+    public void shouldNotInterpolateStringWithoutParameter() {
+        String input = "user:1234";
+
+        Assertions.assertEquals(input, aspect.interpolate(input,  new String[]{}, new Object[]{}));
+    }
 }
